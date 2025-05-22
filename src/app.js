@@ -10,7 +10,7 @@ const form = document.getElementById('getWeather');
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const input = document.querySelector('.input');
-    const apiKey = "8f97b6edbb52d3821d7ee56f654273ed";
+   
     const url1 = `https://api.openweathermap.org/data/2.5/weather?q=${input.value}&units=imperial&appid=${apiKey}`;
 
     const fetchData = fetch(url1);
